@@ -11,8 +11,8 @@ public class N1_E2_main {
 			
 			File dir = new File("D:/Documentos/Estudis");
 		    File[] fileList = dir.listFiles();
-		    for (File pathName : dir.listFiles()) {
-		    	System.out.println(pathName.getName());
+		    for (File f : fileList) {
+		    	printDirectoryFiles(f);
 		    }
 
 		}catch (ArrayIndexOutOfBoundsException e) {
@@ -21,5 +21,17 @@ public class N1_E2_main {
 			System.out.println("For example: java N1_E1_main.java src/n1exercici1");
 		}
 	}
+	
+	public static void printDirectoryFiles(File dir) {
+		if (dir.isDirectory()) {
+			System.out.println("(D)" + dir.getName());
+	    	for (File f : dir.listFiles()) {
+	    		printDirectoryFiles(f);
+	    	}
+	    } else {
+	    	System.out.println("	(F)" + dir.getName());
+	    }
+	}
+	
 
 }
