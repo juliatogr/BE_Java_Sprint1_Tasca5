@@ -18,7 +18,7 @@ public class N1_E3_main {
 		}catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println(e.getMessage());
 			System.out.println("You must introduce a path when executing the file.");
-			System.out.println("For example: java N1_E1_main.java src/n1exercici1");
+			System.out.println("For example: java N1_E3_main.java D:/Documentos");
 		}
 	}
 	
@@ -36,13 +36,13 @@ public class N1_E3_main {
 		        bw.close();
 		    } catch (IOException e) {
 		    	error = true;
-		    	System.out.println("No s'han pogut guardar els fitxers  del directori en el fitxer" + nomFitxer);
-		        e.printStackTrace();
+		    	System.out.println(e.getMessage());
+		    	System.out.println("Could not save the files on " + dir + " to the file " + nomFitxer);
 		    }
 	    }
 	    
 	    if (!error) {
-	    	System.out.println("Fitxers guardats en el fitxer " + nomFitxer);
+	    	System.out.println("Files saved on " + nomFitxer);
 	    }
 	}
 	
@@ -68,8 +68,8 @@ public class N1_E3_main {
 		    }
 	
 		} catch (IOException e) {
-	        System.out.println("No s'ha pogut guardar el fitxer del directori en el fitxer" + nomFitxer);
-	        e.printStackTrace();
+			System.out.println(e.getMessage());
+	        System.out.println("Could not save the files on " + dir + " to the file " + nomFitxer);
 	    }
 	}
 

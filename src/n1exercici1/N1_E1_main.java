@@ -18,7 +18,7 @@ public class N1_E1_main {
 		}catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println(e.getMessage());
 			System.out.println("You must introduce a path when executing the file.");
-			System.out.println("For example: java N1_E1_main.java src/n1exercici1");
+			System.out.println("For example: java N1_E1_main.java D:/Documentos");
 		}
 	}
 
