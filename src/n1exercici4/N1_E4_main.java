@@ -1,17 +1,9 @@
 package n1exercici4;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.sql.Date;
-import java.text.SimpleDateFormat;
 
 public class N1_E4_main {
 

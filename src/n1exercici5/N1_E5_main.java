@@ -17,13 +17,13 @@ public class N1_E5_main {
 		
 		System.out.println("Serializing & deserializing the person...");
 		
-	    FileOutputStream fileOutputStream = new FileOutputStream("test.ser");
+	    FileOutputStream fileOutputStream = new FileOutputStream("person.ser");
 	    ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
 	    objectOutputStream.writeObject(p1);
 	    objectOutputStream.flush();
 	    objectOutputStream.close();
 	    
-	    FileInputStream fileInputStream = new FileInputStream("test.ser");
+	    FileInputStream fileInputStream = new FileInputStream("person.ser");
 	    ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
 	    
 	    System.out.println();
