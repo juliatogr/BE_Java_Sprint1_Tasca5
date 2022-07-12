@@ -57,13 +57,13 @@ public class N1_E3_main {
 			
 		try {
 	        if (dir.isDirectory()) {
-	        	bw.write("(D)" + dir.getName() + " Last Modified: " + lastModDate);
+	        	bw.write("(D)" + dir.getName() + " Last Modified: " + simpleDateFormat.format(lastModDate));
 	        	bw.newLine();
 	        	for (File f : dir.listFiles()) {
 		    		saveDirectoryFilesRec(f, bw);
 		    	}
 		    } else {
-		    	bw.write("	(F)" + dir.getName() + " Last Modified: " + lastModDate);
+		    	bw.write("	(F)" + dir.getName() + " Last Modified: " + simpleDateFormat.format(lastModDate));
 		    	bw.newLine();
 		    }
 	
