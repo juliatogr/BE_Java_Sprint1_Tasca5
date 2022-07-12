@@ -9,10 +9,10 @@ public class N1_E1_main {
 
 		try {
 			
-			File dir = new File("D:/Documentos/Estudis");
+			File dir = new File(args[0]);
 		    File[] fileList = dir.listFiles();
-		    for (File pathName : dir.listFiles()) {
-		    	System.out.println(pathName.getName());
+		    for (File f : fileList) {
+		    	System.out.println(f.getName());
 		    }
 
 		}catch (ArrayIndexOutOfBoundsException e) {
